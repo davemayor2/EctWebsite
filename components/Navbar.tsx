@@ -11,6 +11,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isHidden, setIsHidden] = useState(false)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -26,6 +27,17 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [lastScrollY])
+
+  const services = [
+    { name: 'Auditing Services', href: '/services#auditing' },
+    { name: 'Accounting Services', href: '/services#accounting' },
+    { name: 'Financial Services', href: '/services#financial' },
+    { name: 'Consultancy Services', href: '/services#consultancy' },
+    { name: 'Tax and Payroll Services', href: '/services#tax-payroll' },
+    { name: 'Marketing Services', href: '/services#marketing' },
+    { name: 'Software Implementation and Training', href: '/services#software' },
+    { name: 'Training in Professional Courses', href: '/services#training' },
+  ]
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -117,17 +129,60 @@ const Navbar = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="relative"
                 >
-                  <Link
-                    href={item.href}
-                    className={`flex items-center space-x-1 px-3 py-2 text-lg font-medium transition-colors ${
-                      isActive(item.href)
-                        ? 'text-primary-500'
-                        : 'text-gray-700 hover:text-primary-500'
-                    }`}
+                  {/* Dropdown Container with extended hover area */}
+                  <div
+                    className="relative"
+                    onMouseEnter={() => item.hasDropdown && setIsServicesDropdownOpen(true)}
+                    onMouseLeave={() => item.hasDropdown && setIsServicesDropdownOpen(false)}
                   >
-                    <span>{item.name}</span>
-                    {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
-                  </Link>
+                    <Link
+                      href={item.href}
+                      className={`flex items-center space-x-1 px-3 py-2 text-lg font-medium transition-colors ${
+                        isActive(item.href)
+                          ? 'text-primary-500'
+                          : 'text-gray-700 hover:text-primary-500'
+                      }`}
+                    >
+                      <span>{item.name}</span>
+                      {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
+                    </Link>
+                    
+                    {/* Invisible bridge to prevent gap */}
+                    {item.hasDropdown && isServicesDropdownOpen && (
+                      <div className="absolute top-full left-0 right-0 h-1 bg-transparent"></div>
+                    )}
+                    
+                    {/* Services Dropdown */}
+                    {item.hasDropdown && isServicesDropdownOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute top-full left-0 w-80 bg-white shadow-lg border border-gray-200 z-50"
+                      >
+                        <div className="py-2">
+                          {services.map((service, serviceIndex) => (
+                            <Link
+                              key={serviceIndex}
+                              href={service.href}
+                              className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                            >
+                              <div className="text-sm font-medium">{service.name}</div>
+                            </Link>
+                          ))}
+                          <div className="border-t border-gray-200 mt-2 pt-2">
+                            <Link
+                              href="/services"
+                              className="block px-4 py-3 text-primary-600 hover:bg-primary-50 font-semibold transition-colors"
+                            >
+                              View All Services →
+                            </Link>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -171,18 +226,42 @@ const Navbar = () => {
             >
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
                 {navItems.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className={`block px-3 py-2 text-base font-medium ${
-                      isActive(item.href)
-                        ? 'text-primary-500 bg-primary-50'
-                        : 'text-gray-700 hover:text-primary-500 hover:bg-gray-50'
-                    }`}
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
+                  <div key={item.name}>
+                    <Link
+                      href={item.href}
+                      className={`block px-3 py-2 text-base font-medium ${
+                        isActive(item.href)
+                          ? 'text-primary-500 bg-primary-50'
+                          : 'text-gray-700 hover:text-primary-500 hover:bg-gray-50'
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                    
+                    {/* Mobile Services Dropdown */}
+                    {item.hasDropdown && (
+                      <div className="ml-4 space-y-1">
+                        {services.map((service, serviceIndex) => (
+                          <Link
+                            key={serviceIndex}
+                            href={service.href}
+                            className="block px-3 py-2 text-sm text-gray-600 hover:text-primary-500 hover:bg-gray-50"
+                            onClick={() => setIsMenuOpen(false)}
+                          >
+                            {service.name}
+                          </Link>
+                        ))}
+                        <Link
+                          href="/services"
+                          className="block px-3 py-2 text-sm text-primary-600 font-semibold hover:bg-primary-50"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          View All Services →
+                        </Link>
+                      </div>
+                    )}
+                  </div>
                 ))}
                 <Link href="/contact" className="w-full mt-4 bg-primary-500 text-white px-6 py-3 text-lg font-semibold hover:bg-primary-600 transition-colors">
                   Contact Us
