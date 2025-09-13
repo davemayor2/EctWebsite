@@ -53,11 +53,11 @@ const Navbar = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
-                <span className="text-sm">0408651487</span>
+                <span className="text-sm">+237 694064887</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">admin@EkpombangConsultingandTraining.com.ng</span>
+                <span className="text-sm">EkpombangConsultingandTraining@gmail.com</span>
               </div>
             </div>
             <div className="flex items-center space-x-3">

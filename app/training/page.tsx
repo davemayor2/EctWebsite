@@ -14,32 +14,32 @@ const trainings: TrainingItem[] = [
   {
     title: 'Professional Certification Courses (ACCA, PMP, etc.)',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Netus sit id suspendisse odio magna semper tempor. Donec quis magna netus sit id suspendisse odio magna.',
+      'Master globally recognized certifications including ACCA (Association of Chartered Certified Accountants), PMP (Project Management Professional), CFA, and other professional qualifications. Our expert instructors provide comprehensive preparation with practical case studies, mock exams, and personalized guidance to ensure exam success.',
   },
   {
     title: 'Financial and Accounting Training',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Netus sit id suspendisse odio magna semper tempor. Donec quis magna netus sit id suspendisse odio magna.',
+      'Comprehensive financial training covering financial analysis, budgeting, financial reporting, IFRS standards, and advanced accounting principles. Learn to interpret financial statements, conduct financial modeling, and make data-driven financial decisions that drive business growth.',
   },
   {
     title: 'Business & Management Development',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Netus sit id suspendisse odio magna semper tempor. Donec quis magna netus sit id suspendisse odio magna.',
+      'Develop essential leadership and management skills including strategic planning, organizational behavior, change management, and team leadership. Our programs focus on practical application, case studies, and real-world scenarios to enhance your management capabilities.',
   },
   {
     title: 'Marketing & Sales Mastery',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Netus sit id suspendisse odio magna semper tempor. Donec quis magna netus sit id suspendisse odio magna.',
+      'Master modern marketing strategies including digital marketing, brand management, customer relationship management, and sales techniques. Learn to develop effective marketing campaigns, analyze market trends, and build strong customer relationships that drive revenue growth.',
   },
   {
     title: 'Software Implementation & Digital Tools',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Netus sit id suspendisse odio magna semper tempor. Donec quis magna netus sit id suspendisse odio magna.',
+      'Hands-on training in accounting software (QuickBooks, Xero, Sage), ERP systems, and digital business tools. Learn system implementation, data migration, customization, and user training to optimize business processes and improve operational efficiency.',
   },
   {
     title: 'Custom Corporate Training',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Netus sit id suspendisse odio magna semper tempor. Donec quis magna netus sit id suspendisse odio magna.',
+      'Tailored training programs designed specifically for your organization\'s needs. We work with your team to develop customized curricula covering any business function, ensuring maximum relevance and immediate application in your workplace environment.',
   },
 ]
 
