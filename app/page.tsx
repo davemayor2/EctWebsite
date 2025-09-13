@@ -75,25 +75,25 @@ export default function HomePage() {
       icon: GraduationCap,
       title: 'ACCA (Association of Chartered Certified Accountants)',
       description: 'Advance your accounting and finance career with globally respected ACCA training.',
-      link: '#'
+      link: '/training/acca'
     },
     {
       icon: Award,
       title: 'PMP (Project Management Professional)',
       description: 'Gain recognized expertise in project management and lead with confidence.',
-      link: '#'
+      link: '/training/pmp'
     },
     {
       icon: BarChart3,
-      title: 'IFRS (International Financial Reporting Standards)',
-      description: 'Stay compliant and competitive with deep knowledge of IFRS standards.',
-      link: '#'
+      title: 'Taxation & Payroll Training',
+      description: 'Master tax compliance and payroll management with comprehensive training.',
+      link: '/training/taxation-payroll'
     },
     {
       icon: FileText,
-      title: 'Other Custom Corporate Trainings',
+      title: 'Custom Corporate Training',
       description: 'Tailored programs in business strategy, financial management, and leadership.',
-      link: '#'
+      link: '/training/custom-corporate'
     }
   ]
 
@@ -430,7 +430,7 @@ export default function HomePage() {
                     <p className="text-gray-600 text-lg font-dm-sans leading-relaxed">
                       {program.description}
                     </p>
-                    <Link href="/training" className="inline-flex items-center gap-2 bg-primary-500 text-white px-6 py-3 text-lg font-semibold rounded-lg hover:bg-primary-600 transition-all duration-300 btn-hover">
+                    <Link href={program.link} className="inline-flex items-center gap-2 bg-primary-500 text-white px-6 py-3 text-lg font-semibold rounded-lg hover:bg-primary-600 transition-all duration-300 btn-hover">
                       <span>Learn More</span>
                       <ArrowRight className="w-4 h-4" />
                     </Link>
