@@ -136,7 +136,7 @@ export default function AboutPage() {
           </div>
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: 'Dr. Emmanuel Ekpombang', role: 'Founder & Lead Consultant' },
+              { name: 'Nkongho Ekpombang FCCA', role: 'Co-founder, CEO and Lead Consultant' },
               { name: 'Grace Lovelace', role: 'Head of Training & Development' },
               { name: 'David Olsen', role: 'Senior Financial Consultant' },
               { name: 'Ifeoma Kadiri', role: 'Marketing & Strategy Consultant' },
