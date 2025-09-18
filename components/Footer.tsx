@@ -182,7 +182,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-start space-x-2">
                 <span className="text-gray-500 text-sm font-semibold">Email:</span>
-                <span className="text-gray-500 text-sm">EkpombangConsultingandTraining@gmail.com</span>
+                <span className="text-gray-500 text-sm">info@ect-pro.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="text-gray-500 text-sm font-semibold">Phone:</span>

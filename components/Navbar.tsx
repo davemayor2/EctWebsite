@@ -69,7 +69,7 @@ const Navbar = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">EkpombangConsultingandTraining@gmail.com</span>
+                <span className="text-sm">info@ect-pro.com</span>
               </div>
             </div>
             <div className="flex items-center space-x-3">
