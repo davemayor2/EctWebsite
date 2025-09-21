@@ -136,11 +136,11 @@ export default function AboutPage() {
           </div>
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: 'Nkongho Ekpombang FCCA', role: 'Co-founder, CEO and Lead Consultant' },
-              { name: 'Grace Lovelace', role: 'Head of Training & Development' },
-              { name: 'David Olsen', role: 'Senior Financial Consultant' },
-              { name: 'Ifeoma Kadiri', role: 'Marketing & Strategy Consultant' },
-            ].map((m) => (
+              { name: 'Nkongho Ekpombang FCCA', role: 'Co-founder, CEO and Lead Consultant', show: true },
+              { name: 'Grace Lovelace', role: 'Head of Training & Development', show: false },
+              { name: 'David Olsen', role: 'Senior Financial Consultant', show: false },
+              { name: 'Ifeoma Kadiri', role: 'Marketing & Strategy Consultant', show: false },
+            ].filter(m => m.show).map((m) => (
               <div key={m.name} className="border bg-white">
                 <div className="h-56 bg-gray-200" />
                 <div className="p-4">
