@@ -71,8 +71,8 @@ html {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Force square corners site-wide (buttons, cards, inputs, etc.) */
-*, *::before, *::after {
+/* Force square corners for specific elements only */
+.btn-hover, .card-hover {
   border-radius: 0 !important;
 }
 
