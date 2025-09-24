@@ -343,7 +343,7 @@ export default function BookAppointmentPage() {
               <div className="mt-8 p-6 bg-primary-50 border border-primary-200">
                 <h4 className="font-semibold text-primary-900 mb-2">Need Immediate Assistance?</h4>
                 <p className="text-primary-700 mb-4">
-                  Call us directly at <strong>+237 694064887</strong> or email us at <strong>info@ectconsulting.com</strong>
+                  Call us directly at <strong>+237 694064887</strong> or email us at <strong>info@ect-pro.com</strong>
                 </p>
                 <Link href="/contact" className="text-primary-600 hover:text-primary-700 font-medium">
                   Visit our Contact Page →
