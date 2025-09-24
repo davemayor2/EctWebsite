@@ -142,7 +142,14 @@ export default function AboutPage() {
               { name: 'Ifeoma Kadiri', role: 'Marketing & Strategy Consultant', show: false },
             ].filter(m => m.show).map((m) => (
               <div key={m.name} className="border bg-white">
-                <div className="h-56 bg-gray-200" />
+                <div className="h-56 relative overflow-hidden">
+                  <Image 
+                    src="/images/NkonghoProfile.jpg" 
+                    alt={m.name} 
+                    fill 
+                    className="object-cover" 
+                  />
+                </div>
                 <div className="p-4">
                   <p className="font-semibold">{m.name}</p>
                   <p className="text-gray-600 text-sm">{m.role}</p>
