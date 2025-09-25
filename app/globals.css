@@ -114,3 +114,49 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
+/* Fix input field styling issues */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  background-color: white !important;
+  color: #374151 !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 4px !important;
+  padding: 12px 16px !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  border-color: #1aa99c !important;
+  box-shadow: 0 0 0 3px rgba(26, 169, 156, 0.1) !important;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+/* Override any conflicting styles */
+input[type="text"]:not([class*="border-b"]),
+input[type="email"]:not([class*="border-b"]),
+input[type="tel"]:not([class*="border-b"]),
+input[type="date"]:not([class*="border-b"]),
+select:not([class*="border-b"]),
+textarea:not([class*="border-b"]) {
+  border: 1px solid #d1d5db !important;
+}
+

@@ -116,7 +116,7 @@ export default function ContactPage() {
                     <label htmlFor="requestType" className="block text-sm font-medium text-gray-700 mb-2">
                       Request a Quote
                     </label>
-                    <select id="requestType" className="w-full px-3 py-2 border-b border-gray-300 focus:border-primary-500 focus:outline-none">
+                    <select id="requestType" className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
                       <option value="general">General Inquiry</option>
                       <option value="consulting">Consulting Services</option>
                       <option value="training">Training Programs</option>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                       Name
                     </label>
-                    <input type="text" id="name" className="w-full px-3 py-2 border-b border-gray-300 focus:border-primary-500 focus:outline-none" placeholder="Enter your name" />
+                    <input type="text" id="name" className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" placeholder="Enter your name" />
                   </div>
                 </div>
 
@@ -136,13 +136,13 @@ export default function ContactPage() {
                     <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
                       Company Name
                     </label>
-                    <input type="text" id="company" className="w-full px-3 py-2 border-b border-gray-300 focus:border-primary-500 focus:outline-none" placeholder="Enter company name" />
+                    <input type="text" id="company" className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" placeholder="Enter company name" />
                   </div>
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number
                     </label>
-                    <input type="tel" id="phone" className="w-full px-3 py-2 border-b border-gray-300 focus:border-primary-500 focus:outline-none" placeholder="Enter phone number" />
+                    <input type="tel" id="phone" className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" placeholder="Enter phone number" />
                   </div>
                 </div>
 
@@ -152,13 +152,13 @@ export default function ContactPage() {
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                       Email Address
                     </label>
-                    <input type="email" id="email" className="w-full px-3 py-2 border-b border-gray-300 focus:border-primary-500 focus:outline-none" placeholder="Enter email address" />
+                    <input type="email" id="email" className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" placeholder="Enter email address" />
                   </div>
                   <div>
                     <label htmlFor="heard" className="block text-sm font-medium text-gray-700 mb-2">
                       How you heard about us
                     </label>
-                    <select id="heard" className="w-full px-3 py-2 border-b border-gray-300 focus:border-primary-500 focus:outline-none">
+                    <select id="heard" className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
                       <option value="">Select an option</option>
                       <option value="website">Website</option>
                       <option value="social-media">Social Media</option>
@@ -174,7 +174,7 @@ export default function ContactPage() {
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Message
                   </label>
-                  <textarea id="message" rows={4} className="w-full px-3 py-2 border-b border-gray-300 focus:border-primary-500 focus:outline-none resize-none" placeholder="Enter your message" />
+                  <textarea id="message" rows={4} className="w-full px-4 py-3 border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-none" placeholder="Enter your message" />
                 </div>
 
                 <button type="submit" className="w-full bg-primary-500 text-white py-3 px-6 font-semibold hover:bg-primary-600 transition-colors btn-hover">

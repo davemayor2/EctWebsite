@@ -147,7 +147,7 @@ export default function AboutPage() {
                     src="/images/NkonghoProfile.jpg" 
                     alt={m.name} 
                     fill 
-                    className="object-cover" 
+                    className="object-cover object-top" 
                   />
                 </div>
                 <div className="p-4">
