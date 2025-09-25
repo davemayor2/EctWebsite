@@ -61,7 +61,7 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl font-bold">Who <span className="text-primary-500">We Are</span></h2>
             <p className="text-gray-600">
-            Ekpombang Consulting and Training (EC&T)Limited comprises of trusted consultants with expertise knowledge in the rendering of business consulting and training services. We think globally and act locally with a sound understanding of the client’s business to provide value-adding business solutions to each of our clients. Consider EC&Tas a strategic partner that understands where you are coming from, appreciates where you are now, and recognises where you are going to. Our deep understanding of key markets has established a practice that has become the established standard for assessing our clients. Our consultants have been rendering for over a decade.
+            Ekpombang Consulting and Training (EC&T)Limited comprises of trusted consultants with expertise knowledge in the rendering of business consulting and training services. We think globally and act locally with a sound understanding of the client’s business to provide value-adding business solutions to each of our clients. Consider EC&T as a strategic partner that understands where you are coming from, appreciates where you are now, and recognises where you are going to. Our deep understanding of key markets has established a practice that has become the established standard for assessing our clients. Our consultants have been rendering for over a decade.
             </p>
             <ul className="space-y-3">
               {[
