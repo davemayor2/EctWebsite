@@ -214,13 +214,13 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="flex items-center space-x-4"
             >
-              <a href="#" className="text-gray-500 text-xs hover:text-primary-500 transition-colors">
+              <Link href="/terms" className="text-gray-500 text-xs hover:text-primary-500 transition-colors">
                 Terms of Service
-              </a>
+              </Link>
               <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
-              <a href="#" className="text-gray-500 text-xs hover:text-primary-500 transition-colors">
+              <Link href="/privacy" className="text-gray-500 text-xs hover:text-primary-500 transition-colors">
                 Privacy Policy
-              </a>
+              </Link>
             </motion.div>
           </div>
         </div>
